@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editBar">
+
+        <ImageView
+            android:id="@+id/backgroundView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/blue_transparent_background" />
+
+        <com.t2ksports.wwe2k16cs.erase.WScratchView
+            android:id="@+id/scratchView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_dark"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_dark"
+            android:text="DONE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/background_dark"
+            android:text="CANCEL"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/logo_button_width"
+            android:layout_height="@dimen/logo_button_height"
+            android:layout_centerVertical="true"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/w2klogo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/mainBar"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_centerVertical="true"
+        android:background="#7A0006"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:background="@drawable/paint_back_button"
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/seekStrokeSIze"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#7A0006"
+            android:clickable="true"
+            android:elegantTextHeight="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:text="CLEAR"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtErase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnBack"
+            android:layout_centerHorizontal="true"
+            android:text="ERASE"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnZoom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/pandisabled2x"
+            android:textColor="#FFFFFF"
+            android:layout_alignTop="@+id/seekStrokeSIze"
+            android:layout_toLeftOf="@+id/seekStrokeSIze"
+            android:layout_toStartOf="@+id/seekStrokeSIze"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:text="@string/info_button_text"
+        android:background="@drawable/round_button"
+        android:id="@+id/infoButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
+    
+ 

@@ -1,0 +1,148 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainLayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_transparent_background"
+        android:layout_alignParentTop="true"
+        android:id="@+id/backgroundView"
+        android:layout_above="@+id/editBar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/editBar" />
+
+
+        <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@android:color/background_dark"
+         android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/btnDone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:background="@android:color/background_dark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/btnCancel"
+            android:typeface="normal"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:background="@android:color/background_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_button_width"
+            android:layout_height="@dimen/logo_button_height"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/imgLogo"
+            android:background="@drawable/w2klogo"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7A0006"
+            android:padding="5dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_above="@+id/mainBar"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRENGTH"
+                android:id="@+id/txtStrength"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic"
+                android:textSize="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <SeekBar
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekStrength"
+                android:max="100"
+                android:progress="0"
+                android:indeterminate="false"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:id="@+id/colorView"
+                android:layout_toRightOf="@+id/seekStrength"
+                android:focusableInTouchMode="false"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/black_round_background"
+                android:contentDescription="Selected Color"
+                android:layout_marginLeft="5dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/processing"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:indeterminate="true"/>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:text="@string/info_button_text"
+            android:background="@drawable/round_button"
+            android:id="@+id/infoButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" />
+
+
+    </RelativeLayout>
+    
+ 

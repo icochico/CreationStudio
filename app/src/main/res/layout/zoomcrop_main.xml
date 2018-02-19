@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainBar">
+
+
+    <com.t2ksports.wwe2k16cs.zoomcrop.imagecrop.photoview.PhotoView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:layout_centerInParent="true" />
+
+    <com.t2ksports.wwe2k16cs.zoomcrop.imagecrop.cropoverlay.CropOverlayView
+        android:id="@+id/crop_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:guideLines="false"
+        app:marginSide="10dp"
+        app:marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/btnDone"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:background="@android:color/background_dark"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/btnCancel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/btnCancel"
+            android:typeface="normal"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:background="@android:color/background_dark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_button_width"
+            android:layout_height="@dimen/logo_button_height"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/logo_description"
+            android:id="@+id/imgLogo"
+            android:background="@drawable/w2klogo"
+            android:layout_alignTop="@+id/btnCancel"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editBar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#7A0006"
+        android:padding="5dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/mainBar"
+        android:layout_centerVertical="true">
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:text="@string/info_button_text"
+        android:background="@drawable/round_button"
+        android:id="@+id/infoButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

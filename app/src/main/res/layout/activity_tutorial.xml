@@ -1,0 +1,108 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:id="@+id/editBar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#7A0006"
+        android:padding="5dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+
+        android:layout_above="@+id/mainBar"
+        android:layout_centerVertical="false">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/topEditBar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#7A0006"
+        android:padding="5dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+
+        android:layout_below="@+id/topBar"
+        android:layout_centerVertical="false">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/tips_default_header"
+            android:id="@+id/headerLabel"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/btnDone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textStyle="bold|italic"
+            android:background="@android:color/background_dark" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/topBar"
+        android:layout_above="@id/mainBar"
+        android:layout_margin="5dp"
+        >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tutorialTextView"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:autoLink="web"
+        />
+</ScrollView>
+
+</RelativeLayout>
+    
+ 

@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editBar"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/shapeView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ea1d1d1d" />
+
+        <ImageView
+            android:id="@+id/backgroundView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/blue_transparent_background" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/roundedView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/android_jellybean"
+                android:adjustViewBounds="true"
+                app:siBorderWidth="0dp"
+                app:siRadius="6dp"
+                app:siSquare="true"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/circularView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/android_jellybean"
+                android:adjustViewBounds="true"
+                app:siBorderWidth="0dp"
+                app:siRadius="6dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.StarImageView
+                android:id="@+id/starView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/android_jellybean"
+                android:adjustViewBounds="true"
+                app:siBorderWidth="0dp"
+                app:siRadius="6dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.OctogonImageView
+                android:id="@+id/octogonView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/android_jellybean"
+                app:siBorderWidth="0dp"
+                app:siRadius="6dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_dark"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_dark"
+            android:text="DONE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/background_dark"
+            android:text="CANCEL"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/logo_button_width"
+            android:layout_height="@dimen/logo_button_height"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/w2klogo"
+            android:contentDescription="@string/logo_description"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/mainBar"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_centerVertical="true"
+        android:background="#7A0006"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnStar"
+            android:layout_toLeftOf="@+id/btnStar"
+            android:layout_toStartOf="@+id/btnStar"
+            android:background="#7A0006"
+            android:clickable="true"
+            android:elegantTextHeight="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:text="@string/btn_round"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnOval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#7A0006"
+            android:clickable="true"
+            android:elegantTextHeight="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:text="@string/btn_oval"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnPolygon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnOval"
+            android:layout_toEndOf="@+id/btnOval"
+            android:layout_toRightOf="@+id/btnOval"
+            android:background="#7A0006"
+            android:clickable="true"
+            android:elegantTextHeight="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:text="@string/btn_polygon"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnOval"
+            android:background="#7A0006"
+            android:clickable="true"
+            android:elegantTextHeight="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:text="@string/btn_star"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+</RelativeLayout>
+    
+ 

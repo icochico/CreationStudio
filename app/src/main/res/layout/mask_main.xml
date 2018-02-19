@@ -1,0 +1,149 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_transparent_background"
+        android:layout_alignParentTop="true"
+        android:id="@+id/maskResultView"
+        android:layout_above="@+id/editBar" />
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@android:color/background_dark"
+         android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:id="@+id/btnBack"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:background="@android:color/background_dark" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_button_width"
+            android:layout_height="@dimen/logo_button_height"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/imgLogo"
+            android:background="@drawable/w2klogo"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7A0006"
+            android:padding="5dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_above="@+id/mainBar"
+            android:layout_centerVertical="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="ERASER"
+                    android:id="@+id/btnEraser"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold|italic"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:textColorHighlight="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:text="COLOR"
+                    android:id="@+id/btnColor"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold|italic"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:textColorHighlight="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/btnEraser"
+                    android:layout_toEndOf="@+id/btnEraser"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:text="EDGES"
+                    android:id="@+id/btnEdges"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold|italic"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:textColorHighlight="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/btnShape"
+                    android:layout_toStartOf="@+id/btnShape"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:text="SHAPE"
+                    android:id="@+id/btnShape"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold|italic"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:textColorHighlight="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    
+ 

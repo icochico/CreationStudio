@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WWE 2K16 Creation Studio</string>
+    <string name="app_dir">/wwe2k16</string>
+    <string name="btn_face_photo_capture">FACE PHOTO CAPTURE</string>
+    <string name="btn_logo_capture">LOGO CAPTURE</string>
+    <string name="seek_hue">HUE</string>
+    <string name="seek_saturation">SATURATION</string>
+    <string name="seek_brightness">BRIGHTNESS</string>
+    <string name="seek_contrast">CONTRAST</string>
+    <string name="return_home">Return Home</string>
+    <string name="btn_oval">OVAL</string>
+    <string name="btn_polygon">POLYGON</string>
+    <string name="btn_round">ROUND</string>
+    <string name="btn_star">STAR</string>
+    <string name="logo512x512">CREATE A SUPERSTAR</string>
+    <string name="logo512x512_subtitle">ALL PARTS</string>
+    <string name="logo256x256">CREATE A SUPERSTAR</string>
+    <string name="logo256x256_subtitle">ALL PARTS</string>
+    <string name="logo128x128">CREATE A SUPERSTAR/CREATE AN AREA, CREATE A SHOW/CREATE A CHAMPIONSHIP</string>
+    <string name="logo128x128_subtitle">ALL PARTS</string>
+    <string name="logo1024x1024">CREATE AN ARENA</string>
+    <string name="logo1024x1024_subtitle">STAGE, STAGE OBJECT, RAMP, MAT, STEEL STEPS</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_upload_or_save">UploadOrSaveActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_logo_formats_picker">LogoFormatsPicker</string>
+    <string name="logo_title_sample">CREATE A SUPERSTAR</string>
+    <string name="title_activity_qrcode_scanner">QRCodeScanner</string>
+    <string name="tips_default_header">Tips</string>
+    <string name="info_button_text">i</string>
+    <string name="image_save_success">Image was successfully saved.</string>
+    <string name="image_save_error">Error.</string>
+    <string name="image_save_success_title">SUCCESS</string>
+    <string name="image_save_error_title">ERROR</string>
+    <string name="close_cancel_button">CLOSE</string>
+    <string name="camera_disabled">This app doesn\'t have access to your camera. You can enable access in Privacy Settings</string>
+    <string name="photos_disabled_message">This app doesn\'t have access to your photos. You can enable access in Privacy Settings</string>
+    <string name="photos_permission_error_title">ERROR</string>
+    <string name="face_tip_header">For best results, please:</string>
+    <string name="face_tip_01">Ensure you are in a brightly lit area and that your face is evenly lit to limit shadows</string>
+    <string name="face_tip_02">Take a picture against a solid background of a color not present in your face (e.g. green screen)</string>
+    <string name="face_tip_03">Sweep hair out of your face</string>
+    <string name="face_tip_04">Align the horizontal grid line along your eyeline</string>
+    <string name="face_tip_05">Maintain a neutral facial expression with lips closed</string>
+    <string name="face_tip_06">Stay still while photo is being taken</string>
+    <string name="mask_eraser_tool_tip_01">Tap, hold, and move to erase</string>
+    <string name="mask_eraser_tool_tip_02">Adjust \"Erase\" slider to determine the size of the eraser</string>
+    <string name="mask_eraser_tool_tip_03">Tap U_ARROW to undo</string>
+    <string name="mask_eraser_tool_tip_04">Tap U_HAND_ICON to lock image</string>
+    <string name="face_eraser_tool_tip_01">Remove excess hair and background while maintaining the natural shape of your face</string>
+    <string name="logo_tip_header">For best results, please:</string>
+    <string name="logo_tip_01">Ensure your subject is in a brightly lit area and evenly lit to limit shadows</string>
+    <string name="logo_tip_02">Line up shot so that subject appears flat to reduce distortion</string>
+    <string name="mask_color_tip_01">Tap on the image to select a color to filter (erase) from image</string>
+    <string name="mask_color_tip_02">Increase \"Strength\" slider to adjust rate at which similar colors are filtered out</string>
+    <string name="mask_edges_tip_01">Increase \"Strength\" slider to adjust radius of the blurred edge.</string>
+    <string name="mask_edges_tip_02">Please note this may cause your image to appear blurred at higher strength levels.</string>
+    <string name="adjust_tip_01">Pinch image to adjust size</string>
+    <string name="adjust_tip_02">Hold and move image to reposition for cropping</string>
+    <string name="upload_token_advisory">Before you can upload a custom logo, you will need to have a valid token. Each token is active for 20 minutes after being generated, after which time you will need to generate a new token code. To generate a token, from the WWE 2K16 console version\'s main menu, select WWE CREATIONS then WWE COMMUNITY CREATIONS and go to the LOGO MANAGER to get one.</string>
+    <string name="upload_qrcode_advisory">You can tap on the QR image button to scan the token QR Image that appears on screen in the LOGO MANAGER of your WWE 2K16 console version.</string>
+    <string name="upload_error_message">There was a problem communicating with the game server. Please try again.</string>
+    <string name="upload_successful_message">Congratulations, your image has uploaded to the game server successfully! To access your image on the console version of WWE 2K16, navigate to the listings at WWE Community Creations > Logo Manager > Go to My Logos. Please note that \"Face Photos\" are located in a separate tab from other \"Logos\".</string>
+    <string name="upload_during_message">Uploading to server</string>
+    <string name="legal_credits_notices">barcodescanner\n
+© 2014 Dushyanth Maguluru\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+you may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at\n
+\n
+http://www.apache.org/licenses/LICENSE-2.0\n
+\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+\n\n
+android-shape-imageview\n
+© 2015 Siyamed Sinir\n\n
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n
+\n
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n
+\n
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n
+\n
+
+android-volley\n
+© 2014 Xiaoke Zhang\n
+© 2011 The Android Open Source Project\n
+\n\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+you may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at\n
+\n
+http://www.apache.org/licenses/LICENSE-2.0\n
+\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.\n\n
+
+Android-WScratchView\n
+© 2013 Winson Tan\n
+\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at\n\n
+
+http://www.apache.org/licenses/LICENSE-2.0\n\n
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+\n\n
+
+AndroidImageZoomCrop\n
+© 2015 Gaurav Tiwari\n
+\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at\n\n
+
+http://www.apache.org/licenses/LICENSE-2.0\n\n
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.\n\n
+
+
+cropper\n
+© 2013, Edmodo, Inc.\n\n
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
+\n\n
+http://www.apache.org/licenses/LICENSE-2.0
+\n\n
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+\n\n
+Android Support Library (v4)\n
+© 2011 The Android Open Source Project\n
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
+\n\n
+http://www.apache.org/licenses/LICENSE-2.0
+\n\n
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+    </string>
+    <string name="legal_notice_intro1">All WWE programming, talent names, images, likenesses, slogans, wrestling moves, trademarks, logos and copyrights are the exclusive property of WWE and its subsidiaries. “WWE 2K16 Creation Studio” © 2015 by WWE. All rights reserved.\n\n
+
+Source and/or object code to underlying software for “WWE 2K16 Creation Studio” © 2005-2015 by Take-Two Interactive Software, Inc. Published by 2K. 2K, Take-Two Interactive Software, Inc. and their respective logos are trademarks of Take-Two Interactive Software, Inc. Developed by Hail Studio Web Development.  Hail Studio Web Development and its logo are trademarks and/or registered trademarks of Hail Studio Web Development.
+\n\n
+barcodescanner © 2014 Dushyanth Maguluru. android-shape-imageview © 2015 Siyamed Sinir. android-volley © 2014 Xiaoke Zhang © 2011 The Android Open Source Project. Android-WScratchView  © 2013 Winson Tan.  AndroidImageZoomCrop © 2015 Gaurav Tiwari.  cropper © 2013, Edmodo, Inc.  Android Support Library (v4) © 2011 The Android Open Source Project.
+    </string>
+    <string name="retake_use_tip">You can use the U_WWE2KLOGO on the toolbar throughout the app to navigate between the screens.</string>
+    <string name="upload_legal">You are about to upload a picture to WWE Community Creations.  You may upload content, such as the picture, only if it complies with the Terms of Service available at http://www.take2games.com/legal.\n\nThe purpose for gathering and retaining the picture, and any information associated with it, is to enable you to access and use the WWE Community Creations features of the game and to let other users see an image associated with your user account.  If you upload a picture, it will be visible to you and to others you play with. Your picture also may be recorded or screen captured during gameplay. Content you upload, including the picture, also will be retained on our servers. We will permanently delete it: (a) if you ask that we do so, (b) when the game’s online servers are shut down, or (c) within three years of your last interaction with T2, whichever comes first. See http://forums.2k.com/ for news and updates on server shut-down. Your data, including your picture, also will be treated in accordance with the Take-Two Privacy Policy (http://www.take2games.com/privacy).\n\nBy uploading your picture, you agree to this written release, and you consent to these and other uses, to our retention of the picture and any associated data, to these additional terms, and to the End User License Agreement (http://www.take2games.com/eula). Your access to WWE Community Creations and online features within WWE 2K16 may be suspended or terminated if you upload content which does not comply with the Terms of Service.</string>
+    <string name="logo_description">2K Logo</string>
+    <string name="creation_logo_description">Creation Logo</string>
+</resources>

@@ -1,0 +1,146 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_transparent_background"
+        android:layout_alignParentTop="true"
+        android:id="@+id/adjustResultView"
+        android:layout_above="@+id/editBar" />
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@android:color/background_dark"
+         android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/btnDone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:background="@android:color/background_dark" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/btnCancel"
+            android:typeface="normal"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:background="@android:color/background_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_button_width"
+            android:layout_height="@dimen/logo_button_height"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/imgLogo"
+            android:background="@drawable/w2klogo"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7A0006"
+            android:padding="5dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/mainBar"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MASK"
+                android:id="@+id/btnMask"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                android:background="#7A0006"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:textColorHighlight="@android:color/darker_gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADJUST"
+                android:id="@+id/btnAdjust"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                android:background="#7A0006"
+                android:clickable="true"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:textColorHighlight="@android:color/darker_gray"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLOR"
+                android:id="@+id/btnColor"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                android:background="#7A0006"
+                android:clickable="true"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:textColorHighlight="@android:color/darker_gray"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btnAdjust"
+                android:layout_toEndOf="@+id/btnAdjust" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEVELS"
+                android:id="@+id/btnLevels"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic"
+                android:background="#7A0006"
+                android:clickable="true"
+                android:elegantTextHeight="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:textColorHighlight="@android:color/darker_gray"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btnMask"
+                android:layout_toStartOf="@+id/btnMask" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    
+ 

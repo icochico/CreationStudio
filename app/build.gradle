@@ -1,0 +1,130 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+import java.util.regex.Pattern
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+
+    def versionPropsFile = file('version.properties')
+
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+
+        versionProps.load(new FileInputStream(versionPropsFile))
+        def value = 0
+        def runTasks = gradle.startParameter.taskNames
+        if ('assemble' in runTasks || 'assembleRelease' in runTasks || 'aR' in runTasks) {
+            value = 1;
+        }
+
+        def versionMajor = 0
+        def versionMinor = 9
+        def versionPatch = versionProps['VERSION_PATCH'].toInteger() + value
+        def versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+        def version_Code = versionProps['VERSION_CODE'].toInteger() + 1
+
+        versionProps['VERSION_PATCH'] = versionPatch.toString()
+        versionProps['VERSION_BUILD'] = versionBuild.toString()
+        versionProps['VERSION_CODE']  = version_Code.toString()
+
+        versionProps.store(versionPropsFile.newWriter(), null)
+
+        defaultConfig {
+            versionCode version_Code
+            versionName "${versionMajor}.${versionMinor}.${versionPatch} (${versionBuild})"
+            applicationId "com.t2ksports.wwe2k16CS"
+            minSdkVersion 15
+            targetSdkVersion 23
+        }
+    } else {
+       throw new GradleException("Could not read version.properties!")
+        println("Can't read the version properties");
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    dependencies {
+        //shapes
+        compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+
+        compile 'com.android.support:support-v4:23.0.0'
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile 'com.android.support:appcompat-v7:23.0.0'
+        compile 'com.android.support:cardview-v7:23.0.0'
+        compile 'com.mcxiaoke.volley:library:1.0.+'
+        compile 'me.dm7.barcodescanner:zxing:1.8.3'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+
+
+
+dependencies {
+    compile files('libs/commons-io-2.4-javadoc.jar')
+    compile files('libs/commons-io-2.4.jar')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+}
+
+task('increaseVersionCode') << {
+    def manifestFile = file("src/main/AndroidManifest.xml")
+    def pattern = Pattern.compile("versionCode=\"(\\d+)\"")
+    def manifestText = manifestFile.getText()
+    def matcher = pattern.matcher(manifestText)
+    matcher.find()
+    def versionCode = Integer.parseInt(matcher.group(1))
+    def manifestContent = matcher.replaceAll("versionCode=\"" + ++versionCode + "\"")
+    manifestFile.write(manifestContent)
+}
+
+task('incrementVersionName') << {
+    def manifestFile = file("src/main/AndroidManifest.xml")
+    def patternVersionNumber = Pattern.compile("versionName=\"(\\d+)\\.(\\d+)\\.(\\d+)\\.(\\d+)\"")
+    def manifestText = manifestFile.getText()
+    def matcherVersionNumber = patternVersionNumber.matcher(manifestText)
+    matcherVersionNumber.find()
+    def majorVersion = Integer.parseInt(matcherVersionNumber.group(1))
+    def minorVersion = Integer.parseInt(matcherVersionNumber.group(2))
+    def pointVersion = Integer.parseInt(matcherVersionNumber.group(3))
+    def buildVersion = Integer.parseInt(matcherVersionNumber.group(4))
+    def mNextVersionName = majorVersion + "." + minorVersion + "." + pointVersion + "." + (buildVersion + 1)
+    def manifestContent = matcherVersionNumber.replaceAll("versionName=\"" + mNextVersionName + "\"")
+    manifestFile.write(manifestContent)
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'generateReleaseBuildConfig' || task.name == 'generateDebugBuildConfig') {
+        task.dependsOn 'increaseVersionCode'
+        task.dependsOn 'incrementVersionName'
+    }
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}

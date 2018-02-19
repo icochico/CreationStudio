@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/mainBar">
+    </ImageView>
+
+    <Button
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:text="@string/info_button_text"
+        android:background="@drawable/round_button"
+        android:id="@+id/infoButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/background_dark"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RETAKE"
+            android:id="@+id/btnRetake"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:background="@android:color/background_dark"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/btnCancel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USE PHOTO"
+            android:id="@+id/btnCancel"
+            android:typeface="normal"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:background="@android:color/background_dark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <ImageView
+            android:layout_width="@dimen/logo_button_width"
+            android:layout_height="@dimen/logo_button_height"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/imgLogo"
+            android:background="@drawable/w2klogo"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editBar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#7A0006"
+        android:padding="5dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/mainBar"
+        android:layout_centerVertical="true">
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u21BA"
+        android:id="@+id/btnRotate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textSize="@dimen/logo_button_height"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+</RelativeLayout>
+    
+ 

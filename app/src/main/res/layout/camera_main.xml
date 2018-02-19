@@ -1,0 +1,136 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cameraLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <SurfaceView
+                android:id="@+id/cameraView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+            </SurfaceView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSwitchCamera"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/switch_camera"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/horizontalLine"
+                android:background="@android:color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/verticalLine"
+                android:background="@android:color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+         android:background="@android:color/background_dark"
+         android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:id="@+id/btnCancel"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic"
+            android:background="@android:color/background_dark"
+            android:layout_alignTop="@+id/btnLibrary"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:textSize="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIBRARY"
+            android:id="@+id/btnLibrary"
+            android:typeface="normal"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:background="@android:color/background_dark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnShutter"
+            android:src="@drawable/shutter_40"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editBar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#7A0006"
+            android:padding="5dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/mainBar"
+            android:layout_centerVertical="true">
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:text="@string/info_button_text"
+            android:background="@drawable/round_button"
+            android:id="@+id/infoButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    
+ 

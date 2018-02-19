@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:src="@drawable/background_layer">
+    </ImageView>
+
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="73dp"
+        android:layout_weight=".70"
+        android:id="@+id/twoklogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/w2klogo" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="81dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/twoklogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/creationlabel" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgForeground"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/twoklogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/foreground_layer" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/btn_face_photo_capture"
+        android:id="@+id/btnFaceCapture"
+        android:background="@drawable/main_menu_button_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+
+        android:layout_above="@+id/btnLogoCapture"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/btn_logo_capture"
+        android:id="@+id/btnLogoCapture"
+        android:background="@drawable/main_menu_button_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+     />
+
+    <Button
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:text="@string/info_button_text"
+        android:background="@drawable/round_button"
+        android:id="@+id/infoButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
+
