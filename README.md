@@ -1,6 +1,6 @@
 # Creation Studio
 
-Creation Studio, is an Android app that allows the user to take advantage of the Android Camera API to create custom images that can be edited to include filters and effects, text captions, and drawings.
+Creation Studio is an Android app that allows the user to take advantage of the Android Camera API to create custom images that can be edited to include filters and effects, text captions, and drawings.
 
 <h2>Screens</h2>
 <h3>Completed Items</h3>
